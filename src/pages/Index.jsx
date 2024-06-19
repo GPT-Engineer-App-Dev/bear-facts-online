@@ -1,17 +1,14 @@
-// Update this page (the content is just a fallback if you fail and example)
-// Use chakra-ui
-import { Container, Text, VStack } from "@chakra-ui/react";
-
-// Example of using react-icons
-// import { FaRocket } from "react-icons/fa";
-// <IconButton aria-label="Add" icon={<FaRocket />} size="lg" />; // IconButton would also have to be imported from chakra
+import { Container, Text, VStack, Heading, Image, Box } from "@chakra-ui/react";
 
 const Index = () => {
   return (
     <Container centerContent maxW="container.md" height="100vh" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
       <VStack spacing={4}>
-        <Text fontSize="2xl">Your Blank Canvas</Text>
-        <Text>Chat with the agent to start making edits.</Text>
+        <Heading as="h1" size="2xl">Welcome to Bear World</Heading>
+        <Image src="/images/bear.jpg" alt="Bear" boxSize="300px" objectFit="cover" borderRadius="full" />
+        <Box textAlign="center">
+          <Text fontSize="lg">Discover the fascinating world of bears. Learn about their habitats, behaviors, and the different species that roam our planet.</Text>
+        </Box>
       </VStack>
     </Container>
   );
