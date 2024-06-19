@@ -1,4 +1,5 @@
-import { Container, Text, VStack, Heading, Image, Box } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Image, Box, Button } from "@chakra-ui/react";
+import { Link as RouterLink } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -9,6 +10,9 @@ const Index = () => {
         <Box textAlign="center">
           <Text fontSize="lg">Discover the fascinating world of bears. Learn about their habitats, behaviors, and the different species that roam our planet.</Text>
         </Box>
+        <Button as={RouterLink} to="/partner" colorScheme="teal" mt={4}>
+          Our Partners
+        </Button>
       </VStack>
     </Container>
   );
